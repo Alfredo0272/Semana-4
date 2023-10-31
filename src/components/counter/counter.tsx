@@ -1,8 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './counter.scss';
+import { AppContext } from '../Contetx/app.context';
 
 export const Counter = () => {
   console.log('Render Counter');
+  const { foo } = useContext(AppContext);
+  console.log(foo);
+
   const initialCounter = 0;
   const [count, setCount] = useState(initialCounter);
 

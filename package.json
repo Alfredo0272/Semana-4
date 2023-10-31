@@ -9,10 +9,11 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "test:pro": "jest --watchAll --coverage --watchAll=false --passWithNoTest",
+    "test:pro": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "test:Watch": "jest --watchAll --coverage"
   },
   "dependencies": {
+    "identity-obj-proxy": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5"
